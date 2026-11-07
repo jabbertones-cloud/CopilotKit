@@ -48,6 +48,7 @@ export async function readBody<T extends Response | Request>(
         const reader = stream.getReader();
         const decoder = new TextDecoder();
         let out = "";
+        const MAX_FALLBACK_BYTES = 10 * 1024 * 1024; // 10MB ceiling to prevent buffer runaway
 
         while (true) {
           const { done, value } = await reader.read();
@@ -56,6 +57,10 @@ export async function readBody<T extends Response | Request>(
             out += value; // accept string chunks
           } else {
             out += decoder.decode(value, { stream: true }); // bytes
+          }
+          if (out.length > MAX_FALLBACK_BYTES) {
+            await reader.cancel();
+            break;
           }
         }
         out += decoder.decode(); // flush
