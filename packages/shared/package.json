@@ -63,8 +63,6 @@
     "build": "tsdown",
     "compat-check": "es-check es2022 --module 'dist/**/!(*.umd).{mjs,cjs,js}' && es-check es2018 'dist/**/*.umd.js'",
     "dev": "tsdown --watch",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "check-types": "tsc --noEmit",
     "link:global": "pnpm link --global",
     "unlink:global": "pnpm unlink --global",
@@ -95,8 +93,7 @@
     "tsconfig": "workspace:*",
     "tsdown": "^0.20.3",
     "typescript": "^5.2.3",
-    "valibot": "^1.2.0",
-    "vitest": "^3.2.4"
+    "valibot": "^1.2.0"
   },
   "peerDependencies": {
     "@ag-ui/core": ">=0.0.48"

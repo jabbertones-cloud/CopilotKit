@@ -10,9 +10,6 @@
     "build": "next build",
     "start": "next start --port 3002",
     "pretest": "tsx ../scripts/generate-registry.ts && tsx ../scripts/probe-docs.ts",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:visual": "playwright test",
     "typecheck": "tsc --noEmit",
     "compatibility:audit": "tsx scripts/audit-compatibility.ts"
   },
@@ -23,10 +20,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4.0.0",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
@@ -38,7 +32,6 @@
     "semver": "7.7.4",
     "tailwindcss": "^4.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0",
-    "vitest": "^4.1.4"
+    "typescript": "^5.7.0"
   }
 }

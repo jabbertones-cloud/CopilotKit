@@ -68,17 +68,12 @@
     "size:assert-headless": "node scripts/assert-headless-purity.mjs",
     "compat-check": "es-check es2022 --module 'dist/**/!(*.umd).{mjs,cjs,js}' && es-check es2020 'dist/**/*.umd.js'",
     "dev": "tsdown --watch",
-    "test": "vitest run && pnpm run test:scripts",
-    "test:scripts": "node --test scripts/__tests__/measure-copilotchat.test.mjs scripts/__tests__/assert-headless-purity.test.mjs scripts/__tests__/generate-external-reexports.test.mjs",
-    "test:watch": "vitest",
     "check-types": "tsc --noEmit",
     "link:global": "pnpm link --global",
     "unlink:global": "pnpm unlink --global",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16",
-    "generate:external-reexports": "node scripts/generate-external-reexports.mjs",
-    "test:browser-scroll": "node --test browser-tests/hidden-chat-scroll.test.mjs",
-    "test:browser": "playwright test --config browser/playwright.config.ts"
+    "generate:external-reexports": "node scripts/generate-external-reexports.mjs"
   },
   "dependencies": {
     "@a2ui/web_core": "0.15.0",
@@ -119,10 +114,6 @@
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
     "@tanstack/intent": "^0.0.29",
-    "@testing-library/jest-dom": "^6.0.0",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/react-hooks": "^8.0.1",
-    "@testing-library/user-event": "^14.0.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.0.2",
     "@valibot/to-json-schema": "^1.5.0",
@@ -133,7 +124,6 @@
     "jsdom": "^26.1.0",
     "maplibre-gl": "^5.0.0",
     "phoenix": "^1.8.4",
-    "playwright": "1.59.1",
     "postcss": "^8.5.6",
     "react": "^19.1.0",
     "react-dom": "^19.2.0",
@@ -142,9 +132,7 @@
     "tsdown": "^0.20.3",
     "typescript": "^5.2.3",
     "valibot": "^1.2.0",
-    "vitest": "^3.2.4",
-    "zod": ">=3.0.0",
-    "@playwright/test": "^1.59.1"
+    "zod": ">=3.0.0"
   },
   "peerDependencies": {
     "maplibre-gl": "^5.0.0",

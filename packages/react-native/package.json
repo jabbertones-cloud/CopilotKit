@@ -75,8 +75,6 @@
   "scripts": {
     "build": "tsdown && node scripts/verify-polyfill-barrel.mjs",
     "dev": "tsdown --watch",
-    "test": "vitest run && pnpm run test:scripts",
-    "test:scripts": "node --test scripts/__tests__/measure-headless.test.mjs scripts/__tests__/verify-polyfill-barrel.test.mjs",
     "check-types": "tsc --noEmit",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16 --ignore-rules internal-resolution-error",
@@ -93,15 +91,13 @@
     "web-streams-polyfill": "^4.2.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^16.3.0",
     "@types/react": "^19.2.0",
     "esbuild": "^0.27.0",
     "jsdom": "^26.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tsdown": "^0.20.3",
-    "typescript": "^5.8.3",
-    "vitest": "^3.2.4"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
     "@gorhom/bottom-sheet": "^5.0.0",

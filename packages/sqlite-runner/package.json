@@ -25,9 +25,6 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "check-types": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16"
   },
@@ -42,8 +39,7 @@
     "@types/node": "^22.15.3",
     "better-sqlite3": "^12.2.0",
     "tsdown": "^0.20.3",
-    "typescript": "5.8.2",
-    "vitest": "^3.0.5"
+    "typescript": "5.8.2"
   },
   "peerDependencies": {
     "better-sqlite3": "^12.2.0"

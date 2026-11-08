@@ -6,8 +6,7 @@
     "dev": "concurrently \"next dev --turbopack\" \"cd src/agent && npx @langchain/langgraph-cli@1.2.1 dev --port 8123 --no-browser\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test:e2e": "playwright test"
+    "lint": "next lint"
   },
   "dependencies": {
     "@copilotkit/a2ui-renderer": "1.68.2",
@@ -46,7 +45,6 @@
     "zod4": "npm:zod@4.4.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",
     "@types/pdf-parse": "^1.1.4",

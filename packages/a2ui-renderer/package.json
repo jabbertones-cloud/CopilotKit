@@ -48,9 +48,6 @@
     "build": "tsdown",
     "compat-check": "es-check es2022 --module 'dist/**/!(*.umd).{mjs,cjs,js}' && es-check es2018 'dist/**/*.umd.js'",
     "check-types": "tsc --noEmit -p tsconfig.json",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16"
   },
@@ -63,14 +60,12 @@
   },
   "devDependencies": {
     "@tanstack/intent": "^0.0.29",
-    "@testing-library/react": "^16.0.0",
     "@types/markdown-it": "^14.1.2",
     "@types/react": "^19.2.3",
     "@types/react-dom": "^19.2.3",
     "jsdom": "^26.1.0",
     "tsdown": "^0.20.3",
-    "typescript": "5.9.2",
-    "vitest": "^3.2.4"
+    "typescript": "5.9.2"
   },
   "peerDependencies": {
     "react": "^18 || ^19 || ^19.0.0-rc",

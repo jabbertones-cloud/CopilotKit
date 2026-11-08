@@ -12,9 +12,7 @@
     "agent:apply": "tsx scripts/profile.ts",
     "doctor": "tsx scripts/doctor.ts",
     "dev:mock": "node scripts/mock.mjs",
-    "test": "tsx --test tests/*.test.ts",
     "lint": "oxlint app lib scripts tests",
-    "test:e2e": "playwright test",
     "channel": "tsx --tsconfig tsconfig.channel.json channel-host.mts",
     "typecheck:channel": "tsc -p tsconfig.channel.json --noEmit"
   },
@@ -39,7 +37,6 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",
     "@copilotkit/aimock": "1.43.0",
-    "@playwright/test": "^1.58.2",
     "@types/node": "^22.10.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

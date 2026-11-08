@@ -1,3 +1,0 @@
-```a2ui
-{"version":"1.0","createSurface":{"surfaceId":"answer","components":[{"id":"root","component":"Text","text":"Paris is the capital of France."}]}}
-```

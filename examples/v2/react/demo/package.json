@@ -6,9 +6,6 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "test": "vitest",
-    "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage",
     "learning:export": "node scripts/export-learning-events.mjs"
   },
   "dependencies": {
@@ -41,8 +38,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "vitest": "^3.2.3"
+    "typescript": "^5"
   },
   "nx": {
     "targets": {

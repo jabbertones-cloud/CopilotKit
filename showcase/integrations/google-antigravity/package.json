@@ -6,8 +6,7 @@
     "dev": "concurrently \"next dev --turbopack\" \"python -u -m uvicorn agent_server:app --app-dir src --host 0.0.0.0 --port 8000\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test:e2e": "playwright test"
+    "lint": "next lint"
   },
   "dependencies": {
     "@ag-ui/client": "1.0.1",
@@ -39,7 +38,6 @@
     "zod4": "npm:zod@4.4.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",

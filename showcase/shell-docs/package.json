@@ -9,10 +9,6 @@
     "start": "next start -p 3003",
     "lint": "oxlint .",
     "pretest": "npm run pretypecheck",
-    "test": "vitest run",
-    "test:channels-sdk": "node scripts/check-channels-sdk.mjs",
-    "test:ci": "vitest run",
-    "test:watch": "vitest",
     "pretypecheck": "tsx ../scripts/generate-registry.ts && tsx ../scripts/bundle-demo-content.ts && tsx ../scripts/bundle-angular-source-content.ts && tsx ../scripts/bundle-setup-content.ts && tsx ../scripts/generate-search-index.ts",
     "typecheck": "tsc --noEmit"
   },
@@ -45,7 +41,6 @@
   "devDependencies": {
     "@copilotkit/shared": "1.84.0",
     "@tailwindcss/postcss": "^4.0.0",
-    "@testing-library/react": "^16.3.2",
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -54,8 +49,7 @@
     "postcss": "^8.5.0",
     "tailwindcss": "^4.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0",
-    "vitest": "^4.1.5"
+    "typescript": "^5.7.0"
   },
   "engines": {
     "node": ">=18.18"

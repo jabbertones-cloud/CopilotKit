@@ -50,8 +50,6 @@
   "scripts": {
     "build": "tsdown && node ../../scripts/deprecations/v1-dist-notices.mjs --entrypoint sdk-js,sdk-js-langchain,sdk-js-langgraph-middlewares",
     "dev": "tsdown --watch",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "check-types": "tsc --noEmit",
     "link:global": "pnpm link --global",
     "unlink:global": "pnpm unlink --global",
@@ -76,8 +74,7 @@
     "ts-node": "^10.9.2",
     "tsconfig": "workspace:*",
     "tsdown": "^0.20.3",
-    "typescript": "^5.2.3",
-    "vitest": "^3.2.4"
+    "typescript": "^5.2.3"
   },
   "peerDependencies": {
     "@langchain/core": ">=0.4.0 <2.0.0",

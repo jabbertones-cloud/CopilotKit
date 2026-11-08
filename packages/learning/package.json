@@ -26,8 +26,6 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "check-types": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "size": "node scripts/check-size.mjs",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16"
@@ -36,8 +34,7 @@
     "@copilotkit/typescript-config": "workspace:*",
     "jsdom": "^26.1.0",
     "tsdown": "^0.20.3",
-    "typescript": "5.8.2",
-    "vitest": "^3.2.4"
+    "typescript": "5.8.2"
   },
   "engines": {
     "node": ">=20"

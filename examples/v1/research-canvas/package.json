@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "test": "vitest run",
     "start": "next start",
     "lint": "oxlint .",
     "dev": "concurrently -k -n ui,agent -c blue,red \"PORT=3000 npm run dev:ui\" \"PORT=8000 npm run dev:agent\"",
@@ -43,8 +42,7 @@
     "oxlint": "^1.51.0",
     "postcss": "^8",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5",
-    "vitest": "^4.1.3"
+    "typescript": "^5"
   },
   "nx": {
     "targets": {

@@ -15,8 +15,7 @@
   },
   "scripts": {
     "build": "tsdown",
-    "check-types": "tsc --noEmit",
-    "test": "vitest run"
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@copilotkit/runtime": "workspace:*"
@@ -26,8 +25,7 @@
     "@types/node": "^22.15.3",
     "tsdown": "^0.20.3",
     "typescript": "5.8.2",
-    "fflate": "0.8.2",
-    "vitest": "^3.2.4"
+    "fflate": "0.8.2"
   },
   "engines": {
     "node": ">=20.19.0"

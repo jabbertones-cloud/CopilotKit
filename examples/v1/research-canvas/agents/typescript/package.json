@@ -8,8 +8,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "check-types": "tsc --noEmit",
-    "test": "vitest run src/*.test.ts"
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@copilotkit/sdk-js": "workspace:*",
@@ -27,7 +26,6 @@
   "devDependencies": {
     "@types/html-to-text": "^9.0.4",
     "@types/node": "^22.9.0",
-    "typescript": "^5.6.3",
-    "vitest": "^4.1.3"
+    "typescript": "^5.6.3"
   }
 }

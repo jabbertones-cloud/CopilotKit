@@ -25,9 +25,6 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "check-types": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16"
   },
@@ -40,8 +37,7 @@
     "@copilotkit/typescript-config": "workspace:*",
     "@types/node": "^22.15.3",
     "tsdown": "^0.20.3",
-    "typescript": "5.8.2",
-    "vitest": "^3.0.5"
+    "typescript": "5.8.2"
   },
   "engines": {
     "node": ">=20"

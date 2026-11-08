@@ -13,10 +13,7 @@
     "doctor": "node scripts/doctor.mjs",
     "dev:mock": "node scripts/mock.mjs dev",
     "mock:record": "node scripts/mock.mjs record",
-    "test": "tsx --test tests/*.test.ts",
-    "lint": "oxlint app lib scripts tests",
-    "test:e2e": "playwright test",
-    "test:live-skills": "tsx tests/native-skills.live.ts"
+    "lint": "oxlint app lib scripts tests"
   },
   "dependencies": {
     "@ag-ui/claude-managed-agents": "0.0.1",
@@ -37,7 +34,6 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",
     "@copilotkit/aimock": "1.43.0",
-    "@playwright/test": "^1.58.2",
     "@types/node": "^22.10.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

@@ -19,8 +19,6 @@
     "bundle-vue-content": "tsx bundle-vue-source-content.ts",
     "bundle-setup-content": "tsx bundle-setup-content.ts",
     "extract-starter": "tsx extract-starter.ts",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "probe-backend-tool-history": "node probe-backend-tool-history.mjs"
   },
   "nx": {
@@ -44,14 +42,12 @@
   },
   "dependencies": {
     "@copilotkit/aimock": "1.37.4",
-    "@playwright/test": "^1.59.1",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "chalk": "^5.4.0",
     "glob": "^10.4.0",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
-    "playwright": "^1.59.1",
     "prompts": "^2.4.2",
     "tsx": "^4.19.0",
     "yaml": "^2.7.0"
@@ -59,8 +55,6 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.0.0",
-    "@types/prompts": "^2.4.9",
-    "@vitest/coverage-v8": "^4.1.5",
-    "vitest": "^4.1.5"
+    "@types/prompts": "^2.4.9"
   }
 }

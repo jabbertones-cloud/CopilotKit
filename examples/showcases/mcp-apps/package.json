@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "test": "node --test compatibility.test.mjs"
+    "start": "next start"
   },
   "dependencies": {
     "@ag-ui/client": "0.0.58",

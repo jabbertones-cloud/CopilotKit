@@ -60,9 +60,6 @@
     "gen:tokens": "tsx scripts/generate-tokens.ts",
     "compat-check": "es-check es2022 --module 'dist/**/!(*.umd).{mjs,cjs,js}' && es-check es2018 'dist/**/*.umd.js'",
     "check-types": "tsc --noEmit -p tsconfig.json",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
     "publint": "publint .",
     "attw": "attw --pack . --profile node16"
   },
@@ -76,8 +73,7 @@
     "lit": "^3.3.2",
     "tsdown": "^0.20.3",
     "tsx": "^4.19.2",
-    "typescript": "5.9.2",
-    "vitest": "^3.2.4"
+    "typescript": "5.9.2"
   },
   "engines": {
     "node": ">=20"

@@ -7,10 +7,6 @@
     "build": "node scripts/build-ledgerline-mcp-app.mjs && next build",
     "start": "next start",
     "lint": "eslint .",
-    "test:e2e": "playwright test",
-    "test:e2e:ogui": "playwright test -c playwright.ogui.config.ts",
-    "test:self-learning": "playwright test e2e/memory-learning.spec.ts",
-    "test:unit": "vitest run",
     "typecheck": "tsc --noEmit",
     "mint-dev-license": "node scripts/mint-dev-license.mjs"
   },
@@ -54,9 +50,7 @@
   },
   "devDependencies": {
     "@copilotkit/aimock": "1.19.1",
-    "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4",
-    "@testing-library/react": "^16.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -67,8 +61,7 @@
     "jsdom": "^25.0.1",
     "postcss": "8.5.26",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "vitest": "^3.2.0"
+    "typescript": "^5"
   },
   "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }

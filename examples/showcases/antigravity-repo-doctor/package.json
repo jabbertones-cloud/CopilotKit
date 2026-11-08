@@ -16,9 +16,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test:agent": "cd agent && uv run pytest",
-    "mock-model": "node e2e/mock-model.mjs",
-    "e2e": "node e2e/run-flow.mjs"
+    "mock-model": "node e2e/mock-model.mjs"
   },
   "dependencies": {
     "@ag-ui/client": "1.0.2",

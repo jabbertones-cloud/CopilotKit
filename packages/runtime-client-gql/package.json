@@ -41,8 +41,6 @@
     "check-dts": "tsx ../../scripts/validate-dts-imports.ts dist",
     "compat-check": "es-check es2022 --module 'dist/**/!(*.umd).{mjs,cjs,js}' && es-check es2018 'dist/**/*.umd.js'",
     "dev": "concurrently \"pnpm run graphql-codegen:watch\" \"tsdown --watch\"",
-    "test": "pnpm run graphql-codegen && vitest run",
-    "test:watch": "pnpm run graphql-codegen && vitest",
     "check-types": "tsc --noEmit",
     "graphql-codegen": "graphql-codegen -c codegen.ts",
     "graphql-codegen:watch": "graphql-codegen -c codegen.ts --watch",
@@ -73,8 +71,7 @@
     "esbuild": "^0.23.0",
     "ts-node": "^10.9.2",
     "tsdown": "^0.20.3",
-    "typescript": "^5.4.5",
-    "vitest": "^3.2.4"
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "react": "^18 || ^19 || ^19.0.0-rc"

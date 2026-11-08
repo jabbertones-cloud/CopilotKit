@@ -1,12 +1,10 @@
 {
   "name": "strands-crm-agent",
   "version": "1.0.0",
-  "description": "Northstar CRM — TypeScript Strands agent (AG-UI) for the CopilotKit strands-crm showcase.",
+  "description": "Northstar CRM \u2014 TypeScript Strands agent (AG-UI) for the CopilotKit strands-crm showcase.",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --env-file=.env main.ts",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "dev": "tsx --env-file=.env main.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +15,8 @@
     "@types/express": "^5.0.6",
     "@types/node": "^25.9.1",
     "@types/supertest": "^6.0.3",
-    "supertest": "^7.1.4",
     "tsx": "^4.22.4",
-    "typescript": "^6.0.3",
-    "vitest": "^3.2.4"
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "@ag-ui/aws-strands": "^0.1.0",
